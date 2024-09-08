@@ -1,0 +1,155 @@
+/* layout */
+/* header頁首 */
+.header {
+  background-color: #aa0601;
+  padding: 16px 0;
+  width: 100%;
+}
+.nav {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: 48px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list li a {
+  font-size: 20px;
+  padding: 8px 32px;
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 0;
+  }
+
+  .container-header {
+    padding: 0;
+  }
+  .header .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header .logo {
+    margin: 16px 15px;
+  }
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .nav-item {
+    width: 50%;
+    text-align: center;
+  }
+
+  .nav-list li a {
+    font-size: 16px;
+    padding: 12px 0;
+    width: 100%;
+    border: 1px solid #fff;
+  }
+}
+
+/* footer */
+.footer {
+  background-color: #aa0601;
+  padding-top: 48px;
+  padding-bottom: 32px;
+  color: #fff;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+}
+
+.footer .nav-list {
+  margin-bottom: 24px;
+}
+
+.footer .nav-list li a {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.contact-list {
+  font-size: 36px;
+}
+
+.contact-list .material-symbols-outlined {
+  font-size: 40px;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.social-icon li a {
+  padding: 0 16px;
+}
+
+.social-icon li a img {
+  width: 48px;
+}
+
+.copyright {
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.copyright-list li a {
+  font-size: 14px;
+  padding: 0 24px;
+}
+
+@media (max-width: 996px) {
+  .social-icon li a {
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer .nav {
+    display: none;
+  }
+
+  .contact-list {
+    font-size: 16px;
+  }
+  .contact-list .material-symbols-outlined {
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+
+  .social-icon li a {
+    padding: 0 4px;
+  }
+
+  .social-icon li a img {
+    width: 24px;
+  }
+
+  .copyright {
+    flex-direction: column;
+  }
+
+  .copyright-list {
+    flex-direction: column;
+  }
+
+  .copyright-list li a {
+    font-size: 16px;
+    padding: 4px 0;
+  }
+}
